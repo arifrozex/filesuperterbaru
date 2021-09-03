@@ -94,7 +94,7 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b>Kamu harus join/gabung chanel terlebih dahulu untuk menggunakan bot ini !\n\nKlik Join Chanel Dibawah ini \nJika sudah klik bagian sini 👉🏻</b>"
+    text = "<b>Kamu harus join/gabung chanel terlebih dahulu untuk menggunakan bot ini !\n\nKlik Join Chanel Dibawah ini \nJika sudah klik bagian sini</b>"
     message_text = message.text
     try:
         command, argument = message_text.split()
